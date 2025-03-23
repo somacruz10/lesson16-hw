@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "local": "serve ./src/simpleForm.html",
+    "local": "serve ./src",
     "prettier:format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "prettier:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css,md}\""
   },
