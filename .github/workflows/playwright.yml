@@ -21,8 +21,11 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      #    - name: Run local html server
-      #      run: npm run local
+      - name: Run local html server
+        run: npm run local
+
+      - name: Wait for local server
+        run: npx wait-on http://localhost:3000/simpleForm.html
 
       - name: Run Playwright tests
         run: npx playwright test
