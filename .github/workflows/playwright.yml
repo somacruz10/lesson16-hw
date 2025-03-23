@@ -22,7 +22,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run local html server
-        run: npm run local
+        run: npm run local &
 
       - name: Wait for local server
         run: npx wait-on http://localhost:3000/simpleForm.html
